@@ -35,8 +35,4 @@ const Buttons = () => {
 
 export default Buttons;
 
-// for (let i = 0; i < value.length; i++) {
-//   for (let j = 0; j < value[i].numbers.length; j++) {
-//     console.log(value[i].numbers[j].digit);
-//   }
-// }
+
