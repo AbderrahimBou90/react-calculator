@@ -1,10 +1,11 @@
 import React from "react";
 import { Form, Container, Card, Alert } from "react-bootstrap";
+import Screen from "./Screen";
 import Buttons from "./Buttons";
 import { useGlobalContext } from "./context";
 
 function App() {
-  const { value, alert } = useGlobalContext();
+  const { alert } = useGlobalContext();
 
   return (
     <Container
@@ -19,16 +20,8 @@ function App() {
             </Alert>
           )}
           <Form>
-            <Form.Group className="mb-3 ">
-              <Form.Control
-                type="text"
-                value={value}
-                placeholder="0"
-                className="p-3"
-                disabled='cursor'
-                style={{ fontSize: "1.5rem" }}
-              />
-            </Form.Group>
+            {/* screen component */}
+            <Screen/>
             {/* buttons component */}
             <Buttons />
           </Form>
